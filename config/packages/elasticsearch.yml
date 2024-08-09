@@ -1,0 +1,9 @@
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+# Disable security features
+xpack.security.enabled: false
+xpack.security.enrollment.enabled: false
+
+# Disable SSL for HTTP API connections
+xpack.security.http.ssl.enabled: false

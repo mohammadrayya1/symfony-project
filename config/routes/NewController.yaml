@@ -1,0 +1,20 @@
+# config/routes/NewController.yaml
+hello_route:
+  path: /new
+  controller: App\Controller\NewController::index
+  methods: GET
+
+hello_routee:
+  path: /neww/{name}
+  controller: App\Controller\NewController::indexx
+  methods: GET
+
+route_post:
+  path: /save
+  controller: App\Controller\NewController::save
+  methods: POST
+
+route_save:
+  path: /newshow
+  controller: App\Controller\NewController::show
+  methods: GET

@@ -1,0 +1,19 @@
+fos_elastica:
+    clients:
+        default:
+            host: '%env(ELASTICSEARCH_HOST)%'
+            port: '%env(ELASTICSEARCH_PORT)%'
+            url: '%env(ELASTICSEARCH_URL)%'
+
+    indexes:
+        books:
+            properties:
+                title: { type: text, analyzer: standard }
+                author: { type: text, analyzer: standard }
+                description: { type: text, analyzer: standard }
+            persistence:
+                driver: orm
+                model: App\Entity\Book
+                provider: ~
+                listener: ~
+                finder: ~

@@ -1,0 +1,22 @@
+first_page:
+  path: /show/{id}
+  controller: App\Controller\HelloController::index
+  methods: GET
+
+Service_cont:
+  path: /serv
+  controller: App\Controller\HelloController::serv
+  methods: GET
+
+
+
+
+route_addpost:
+    path: /addPost/{name}
+    controller: App\Controller\HelloController::addPost
+    methods: GET
+
+search:
+  path: /search/{book}
+  controller: App\Controller\HelloController::search
+  methods: GET
